@@ -33,6 +33,13 @@ public:
 	/** called when projectile hits something */
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+	// HitComp = component, that was hit
+	// OtherActor = the other actor, that hit us
+	// OtherComp, which component hit us from the other actor
+	// NormalImpulse = direction of the hit
+	// FHitResult, where we got hit
+
+	
 
 	/** Returns CollisionComp subobject **/
 	USphereComponent* GetCollisionComp() const { return CollisionComp; }
